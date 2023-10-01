@@ -1,0 +1,12 @@
+//
+//  RELEASE.xcconfig
+//  PhotoGallery
+//
+//  Created by Arslan Ilyas on 26/4/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+UNSPLASH_HOST = www.flickr.com
+UNSPLASH_CLIENT_ID = 7e19c1402f8848346f0c8c3a5e352de3
+
