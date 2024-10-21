@@ -12,7 +12,8 @@ struct PhotoGalleryApp: App {
     let viewModel = PhotoListViewModel(photosFetcher: PhotosAPI())
     var body: some Scene {
         WindowGroup {
-            PhotoListView(viewModel: viewModel)
+//            PhotoListView(viewModel: viewModel)
+            TempView()
         }
     }
 }

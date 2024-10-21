@@ -38,9 +38,7 @@ struct PhotoCard<Model>: View where Model: PhotosListViewModelInterface {
             
             ZStack {
                 NavigationLink {
-                    if let nsId = photo.owner, let userName = photo.ownername {
-                        PhotoListRouter.makeContactPhotoListView(nsid: nsId, userName: userName)
-                    }
+                    
                 } label: {
                     HStack(spacing: 10) {
                         AsyncImage(url: URL(string: viewModel.getServerIconURL(photoModel: photo) ?? "")) { phase in

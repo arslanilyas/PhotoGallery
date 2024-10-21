@@ -6,12 +6,5 @@
 	<string>$(UNSPLASH_CLIENT_ID)</string>
 	<key>UNSPLASH_HOST</key>
 	<string>$(UNSPLASH_HOST)</string>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<true/>
-		<key>UISceneConfigurations</key>
-		<dict/>
-	</dict>
 </dict>
 </plist>

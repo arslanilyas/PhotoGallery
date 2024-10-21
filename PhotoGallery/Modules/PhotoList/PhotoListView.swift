@@ -20,22 +20,26 @@ struct PhotoListView <Model>: View where Model:PhotosListViewModelInterface {
     let height: CGFloat = 182
     
     var body: some View {
-        NavigationView {
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 16) {
-                    ForEach(viewModel.photoList) { photo in
-                        if let imageURL = viewModel.getPhotoURL(photoModel: photo) {
-                            PhotoCard(title: photo.ownername ?? "N/A", imageURL: imageURL, tags: photo.tags ?? "", viewModel: viewModel, photo: photo)
-//                                .frame(height: height)
+        ZStack {
+            NavigationView {
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 16) {
+                        ForEach(viewModel.photoList) { photo in
+                            if let imageURL = viewModel.getPhotoURL(photoModel: photo) {
+                                PhotoCard(title: photo.ownername ?? "N/A", imageURL: imageURL, tags: photo.tags ?? "", viewModel: viewModel, photo: photo)
+                                    .frame(height: height)
+                            }
                         }
                     }
+                    .padding()
                 }
-                .padding()
+                .navigationBarTitle(AppConstants.PageTitle.PhotoListView)
             }
-            .navigationBarTitle(AppConstants.PageTitle.PhotoListView)
-        }
-        .onAppear {
-            viewModel.fetchPhotoList()
+            .onAppear {
+                viewModel.fetchPhotoList()
+            }
+            
+            Text("Hello, World!").font(.largeTitle)
         }
     }
 }

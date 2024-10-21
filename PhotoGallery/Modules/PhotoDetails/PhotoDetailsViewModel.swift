@@ -35,6 +35,7 @@ extension PhotoDetailsViewModel: PhotoDetailsViewModelInterface {
         }
         return "https://live.staticflickr.com/\(server)/\(id)_\(secret).jpg"
     }
+    //Users/arslanilyas/Documents/Projects/PhotoGallery/PhotoGallery/Constants/AppConstants.swift
     
     
     func downloadPhoto() {

@@ -13,10 +13,4 @@ enum PhotoListRouter {
         let view = PhotoDetailsView(viewModel: viewModel)
         return view
     }
-    
-    static func makeContactPhotoListView(nsid: String, userName: String) -> some View {
-        let viewModel = ContactPhotoListViewModel(photosFetcher: PhotosAPI(), nsid: nsid, userName: userName)
-        let view = ContctPhotoListView(viewModel: viewModel)
-        return view
-    }
 }

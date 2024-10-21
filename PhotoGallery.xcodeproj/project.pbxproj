@@ -33,9 +33,7 @@
 		B9DC60172817C52D00CFE05E /* PhotoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DC60162817C52D00CFE05E /* PhotoDetailsViewModel.swift */; };
 		B9DC60192817C65700CFE05E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DC60182817C65700CFE05E /* AppConstants.swift */; };
 		FF55B43B2A25642000471611 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FF55B43A2A25642000471611 /* SwiftyJSON */; };
-		FF55B43D2A2684BB00471611 /* ContactPhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55B43C2A2684BB00471611 /* ContactPhotoListViewModel.swift */; };
-		FF55B43F2A2684FB00471611 /* ContctPhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55B43E2A2684FB00471611 /* ContctPhotoListView.swift */; };
-		FF55B4412A26896900471611 /* ContactPhotoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55B4402A26896900471611 /* ContactPhotoCard.swift */; };
+		FFCADD672C43DF2200FDDBE1 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCADD662C43DF2200FDDBE1 /* CustomSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,9 +85,7 @@
 		B9DC60182817C65700CFE05E /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		B9DC601A2817C77100CFE05E /* UAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UAT.xcconfig; sourceTree = "<group>"; };
 		B9DC601B2817C79300CFE05E /* RELEASE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RELEASE.xcconfig; sourceTree = "<group>"; };
-		FF55B43C2A2684BB00471611 /* ContactPhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPhotoListViewModel.swift; sourceTree = "<group>"; };
-		FF55B43E2A2684FB00471611 /* ContctPhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContctPhotoListView.swift; sourceTree = "<group>"; };
-		FF55B4402A26896900471611 /* ContactPhotoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPhotoCard.swift; sourceTree = "<group>"; };
+		FFCADD662C43DF2200FDDBE1 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +141,7 @@
 		B9DC5FD328167A0700CFE05E = {
 			isa = PBXGroup;
 			children = (
+				FFCADD662C43DF2200FDDBE1 /* CustomSlider.swift */,
 				B9DC5FDE28167A0700CFE05E /* PhotoGallery */,
 				B9DC5FEF28167A1100CFE05E /* PhotoGalleryTests */,
 				B9DC5FF928167A1100CFE05E /* PhotoGalleryUITests */,
@@ -234,9 +231,6 @@
 				B9DC60122817C4CA00CFE05E /* PhotoListViewModel.swift */,
 				B9A3DBE02817D28100ACAFDE /* PhotoListModel.swift */,
 				B94D4520281C2AE000976386 /* PhotoListRouter.swift */,
-				FF55B43C2A2684BB00471611 /* ContactPhotoListViewModel.swift */,
-				FF55B43E2A2684FB00471611 /* ContctPhotoListView.swift */,
-				FF55B4402A26896900471611 /* ContactPhotoCard.swift */,
 			);
 			path = PhotoList;
 			sourceTree = "<group>";
@@ -424,14 +418,12 @@
 				B9A3DBE928181E6C00ACAFDE /* APIError.swift in Sources */,
 				B9DC60192817C65700CFE05E /* AppConstants.swift in Sources */,
 				B9A3DBE528181A6200ACAFDE /* PhotosAPI.swift in Sources */,
-				FF55B43D2A2684BB00471611 /* ContactPhotoListViewModel.swift in Sources */,
 				B9DC60172817C52D00CFE05E /* PhotoDetailsViewModel.swift in Sources */,
 				B9A3DBE32818188700ACAFDE /* JSONParser.swift in Sources */,
-				FF55B4412A26896900471611 /* ContactPhotoCard.swift in Sources */,
+				FFCADD672C43DF2200FDDBE1 /* CustomSlider.swift in Sources */,
 				B94D4521281C2AE000976386 /* PhotoListRouter.swift in Sources */,
 				B9C3C219281A94FE004246FE /* PhotoCard.swift in Sources */,
 				B9DC5FE228167A0700CFE05E /* PhotoListView.swift in Sources */,
-				FF55B43F2A2684FB00471611 /* ContctPhotoListView.swift in Sources */,
 				B9DC60132817C4CA00CFE05E /* PhotoListViewModel.swift in Sources */,
 				B9C3C21B281AA5E8004246FE /* MockPhotoListViewModel.swift in Sources */,
 				B9A3DBF02819755600ACAFDE /* FetchAPI.swift in Sources */,
@@ -648,7 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.PhotoGallery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matter.sync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
